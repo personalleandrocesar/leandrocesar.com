@@ -5,7 +5,6 @@ import NavBottom from '../components/NavBottom.vue'
 
 <template>
   <div>
-    <NavOne class="logoAnimationOne" />
     <div class='anima'>
       <Home />
     </div>
