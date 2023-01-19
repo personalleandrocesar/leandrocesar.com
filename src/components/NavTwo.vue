@@ -4,9 +4,6 @@
             <div>
                 <a @click="$router.go(-1)"><i class="fas main-l fa-arrow-left"></i></a>
             </div>
-            <div>
-                <RouterLink to="/login"><i class="fa-solid fa-right-to-bracket"></i></RouterLink>
-            </div>
         </div>
     </div>
 

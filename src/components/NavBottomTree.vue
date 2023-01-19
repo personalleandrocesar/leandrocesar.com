@@ -21,10 +21,6 @@ methods: {
       <i class="fa-solid fa-diagram-project"></i>
       <h5>PROJETOS</h5>
     </RouterLink>
-    <RouterLink to='/blog' @click.native="scrollToTop()">
-      <i class="fa-solid fa-blog"></i>
-    <h5>BLOG</h5>
-    </RouterLink>
      <RouterLink to='/sobre' @click.native="scrollToTop()">
     <i class="fa-solid fa-user"></i>
       <h5>SOBRE</h5>
