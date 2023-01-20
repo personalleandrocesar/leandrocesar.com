@@ -34,7 +34,7 @@
     
     
     
-      <RouterLink to='/professor' class='main-five-card'>
+      <a href="https://professorleandrocesar.com" class='main-five-card'>
     
         <div>
           <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'>
@@ -44,7 +44,7 @@
           <h5>@professorleandrocesar</h5>
           <p>| Personal trainer | Consultoria | Avaliação Física | Krav-maga |</p>
         </div>
-      </RouterLink>
+      </a>
       <a href="https://deepacupuntura.com" class='main-five-card'>
     
         <div>
