@@ -20,297 +20,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
   </div>
 </template>
-<script>
-export default {
-  head: {
-    title: 'Projetos | Leandro Cesar',
-    htmlAttrs: {
-      lang: 'pt-br'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Professor Leandro Cesar Ramos da Costa | Site para Conteúdos e Serviços => Personal Trainer | Consultoria Online e Presencial | Acupuntura | Atendimentos em Niterói e São Gonçalo - RJ' },
-      { hid: 'keywords', name: 'description', content: 'Personal trainer, Acupuntura, Consultoria' },
-      { name: 'format-detection', content: 'telephone=no' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
-      { rel: 'shortcut icon', type: 'image/x-icon', href: '/img/favicon.svg' },
-      { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-      { rel: 'icon', type:'image/png', size: '32x32', href: '/img/favicon-32x32.png' },
-      { rel: 'icon', type:'image/png', size: '16x16', href: '/img/favicon-16x16.png' },
-      { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-      { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: '#002937' }
-    ]
-  },
-  data() {
-      return {
-          aplicar : '',
-          aplicarTwo : '',
-          aplicarTree : '',
-          aplicarFour : '',
-          aplicarFive : '',
-          aplicarSix : '',
-          aplicarSeven : '',
-          aplicarEight : true,
-          aplicarEduca : true,
-          aplicarAcupu : '',
-          acontecimentos: `
-        <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Conlusão do curso de Pós-Graduação Lato-sensu em Acupuntura - Universidade Celso Lisboa - UCL;
-            </li>
-            <li>
-              Finalizando o estágio em Acupuntura na Celso Lisboa - UCL;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;">Janeiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Site deepacupuntura.com no ar;
-            </li>
-            <li>
-              Curso de aprimoramento teórico e prático de Acupuntura Escalpiana de Jiao Shunfa; 
-            </li>
-            <li>
-              Início dos trabalhos da Deep Acupuntura na academia BodyClass;
-            </li>
-          </ul>
-          
-          `,
-      }
-  },
-  methods: {
-      doisUm() {
-          this.aplicar = true,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.acontecimentos = `
-        <h4 style="margin-left: 10px;"> Novembro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Pós-Graduação em Cinesiologia, Biomecânica e Treinamento Físico - Universidade 
-              Castelo Branco - UCB;     
-            </li>
-          </ul>
-          <h4 style="margin-left: 10px;"> Julho</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Pós-Graduação em Lesões e Doenças Musculoesqueléticas: Exercício Físico e Reabilitação - Universidade 
-              Castelo Branco - UCB;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;"> Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Reinício do estágio em Acupuntura - Pós Pandemia (COVID-19);
-            </li>
-          </ul>
-          `
-      },
-      umOito(){
-        this.aplicar = false,
-          this.aplicarTwo = true,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos = `
-        <h4 style="margin-left: 10px;">Novembro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Pós-Graduação em Acupuntura - Universidade Celso Lisboa - UCB;
-            </li>
-          </ul>
-          `
-      },
-      umSete() {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = true,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos = 
-          `
-          <h4 style="margin-left: 10px;">Março</h4>
-        <ul class="com-bullet com-indent">
-          <li>
-            Início do curso de Formação de Professor de Yoga - Shiva Studio - Rio de Janeiro - RJ;
-          </li>
-          </ul>
-          `
-      },
-      umUm(){
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = true,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos =
-          `
-        <h4 style="margin-left: 10px;">Novembro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Término do curso de Formação de Instrutor de Krav-Maga - Bukan School of Krav-maga - Rio de Janeiro - RJ;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;">Março</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Formação de Instrutor de Krav-Maga - Bukan School of Krav-maga - Rio de Janeiro - RJ;
-            </li>
-          </ul>
-          `
-      },
-      zeroOito(){
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = true,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos =
-          `
-        <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Término do curso de Graduação em Educação Física - Universidade Salgado de Oliveita - UNIVERSO;
-            </li>
-          </ul>
-          `
-      },
-      zeroCinco() {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = true,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos =
-          `
-        <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Graduação em Educação Física - Universidade Salgado de Oliveita - UNIVERSO;
-            </li>
-          </ul>
-          `
-      },
-      oitoSeis () {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = true,         
-         this.aplicarEight = false,
-          this.acontecimentos = 
-          `
-        <h4 style="margin-left: 10px;">Outubro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          `
-      },
-      doisDois () {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = true,
-          this.acontecimentos = 
-          `
-          <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Conlusão do curso de Pós-Graduação Lato-sensu em Acupuntura - Universidade Celso Lisboa - UCL;
-            </li>
-            <li>
-              Finalizando o estágio em Acupuntura na Celso Lisboa - UCL;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;">Janeiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Site deepacupuntura.com no ar;
-            </li>
-            <li>
-              Curso de aprimoramento teórico e prático de Acupuntura Escalpiana de Jiao Shunfa; 
-            </li>
-            <li>
-              Início dos trabalhos da Deep Acupuntura na academia BodyClass;
-            </li>
-          </ul>
-          `
-      },
-      educa () {
-        this.aplicarEduca = true,
-        this.aplicarAcupu = false,
-          this.projetos = 
-          `
-          <h4 style="margin-left: 10px;">Personal | Consultoria</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Ativo</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          <h4 style="margin-left: 10px;">EternFlow.com</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Em desenvolvimento</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          `
-      },
-      acupu () {
-        this.aplicarAcupu = true,
-        this.aplicarEduca = false,
-          this.projetos = 
-          `
-          <h4 style="margin-left: 10px;">Deep Acupuntura</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Em Desenvolvimento</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          `
-      }
-  }
-} 
-</script>
 <style scoped>
-  body {
+body {
   background: #fff;
   font-family: 'Philosopher', sans-serif;
   color: #aaa;
@@ -445,6 +156,26 @@ code {
   width: 100px;
   padding: 9px 5px 5px 5px;
 border-radius: 0% 10% 10% 10%;
+transition: all .4s linear;
+}
+.main-four i {
+  color: #aaa;
+  transition: all .4s linear;
+}
+
+.main-four a:hover {
+  color: #777;
+}
+.main-four a:hover i {
+  color: #777;
+}
+.main-four a.router-link-exact-active {
+  color: #000;
+  background-color: #eeeeee90;
+}
+.main-four a.router-link-exact-active i {
+  color: #000;
+  background-color: #eeeeee90;
 }
 
 .main-five {
@@ -583,15 +314,10 @@ padding: 0 15px 0 0;
     color: #000;
 }
 
-a.RouterLink-exact-active {
-  background-color: #eeeeee70;
-  color:#000;
-  border-radius: 0% 10% 10% 10%;
-}
+
 
 
 @media only screen and (max-width: 369px) {
 
   }
-
 </style>

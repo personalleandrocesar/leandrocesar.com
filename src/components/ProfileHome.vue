@@ -25,7 +25,7 @@
 
     <div class='main-tree'>
       <div>
-        <h5><i class="fa-solid fa-bars-progress"></i> Projetos</h5>
+        <h5><i class="fa-solid fa-bars-progress"></i> Projetos em destaque</h5>
       </div>
     </div>
     
@@ -42,7 +42,7 @@
         <div>
           <h4>Professor<br>Leandro Cesar</h4>
           <h5>@professorleandrocesar</h5>
-          <p>| Personal trainer | Consultoria | Avaliação Física | Krav-maga |</p>
+          <p>Personal trainer - Consultoria - Avaliação Física - Krav-maga</p>
         </div>
       </a>
       <a href="https://deepacupuntura.com" class='main-five-card'>
@@ -133,45 +133,9 @@
     
     </div>
     
-    <br><br>
-    <br><br>
     <br>
-    <br>
-    <br>
-
   </div>
 </template>
-<script>
-export default {
-  methods: {
-    scrollToTop() {
-      window.scrollTo(0, 0);
-    }
-  },
-head: {
-  title: 'Leandro Cesar',
-  htmlAttrs: {
-    lang: 'pt-br'
-  },
-  meta: [
-    { charset: 'utf-8' },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { hid: 'description', name: 'description', content: 'Professor Leandro Cesar Ramos da Costa | Site para Conteúdos e Serviços => Personal Trainer | Consultoria Online e Presencial | Acupuntura | Atendimentos em Niterói e São Gonçalo - RJ' },
-    { hid: 'keywords', name: 'description', content: 'Personal trainer, Acupuntura, Consultoria' },
-    { name: 'format-detection', content: 'telephone=no' }
-  ],
-  link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
-    { rel: 'shortcut icon', type: 'image/x-icon', href: '/img/favicon.svg' },
-    { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-    { rel: 'icon', type:'image/png', size: '32x32', href: '/img/favicon-32x32.png' },
-    { rel: 'icon', type:'image/png', size: '16x16', href: '/img/favicon-16x16.png' },
-    { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-    { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: '#002937' }
-  ],
-}
-}
-</script>
 <style scoped>
 body {
   background: #fff;
@@ -196,7 +160,7 @@ i {
 }
 
 code {
-  font-size: 0.6em;
+  font-size: 0.5em;
   margin-left: 15px;
   padding-left: 10px;
   border-left: solid 5px #eee;
@@ -309,7 +273,7 @@ code {
   justify-content: flex-start;
   flex-direction: column;
   padding: 0px 0 15px 0;
-  margin-top: -20px; 
+  margin-top: -30px; 
   color: black;
 }
 
@@ -317,7 +281,7 @@ code {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin: -10px 0 0 0;
+  margin: -10px 0 -20px 0;
   color: #aaa;
   overflow-x:auto;
 }
@@ -413,10 +377,10 @@ code {
 
 .main-five h4 {
   margin: 10px 10px 0 10px;
-  color: #002937;
+  color: #333;
   transition: all .4s linear;
   text-align: center;
-
+  line-height: normal;
 }
 
 .main-five h5:nth-child(1) {
@@ -438,7 +402,6 @@ code {
 }
 
 .main-five-card {
-  margin: 0px 10px 40px 10px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -457,7 +420,7 @@ code {
 
 .main-five a {
   border: solid 1px #eeeeee;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   margin: 0px 5px 20px 5px;
   border-radius: 3% 3% 3% 3%;
   transform: scale(0.97);
@@ -475,15 +438,12 @@ code {
 .main-five a:hover:nth-child(1) {
   box-shadow: 0 5px 5px #fadb41;
 }
-
-.main-five a:hover:nth-child(2) {
-  box-shadow: 0 5px 5px #e23a28;
-}
-
 .main-five a:hover:nth-child(1) h4 {
   text-shadow: 0 1px 1px #fadb41;
 }
-
+.main-five a:hover:nth-child(2) {
+  box-shadow: 0 5px 5px #e23a28;
+}
 .main-five a:hover:nth-child(2) h4 {
   text-shadow: 0 1px 1px #e23a28;
 }
@@ -507,11 +467,12 @@ code {
 .main-five p {
   padding: 0px;
   margin: 0px 10px 0px 10px;
-  font-size: .8em;
+  font-size: .7em;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  color: #777;
 }
 .main-six {
   display: flex;

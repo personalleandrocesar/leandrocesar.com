@@ -7,7 +7,7 @@ import NavBottomTree from '../components/NavBottomTree.vue'
 <div>
   <NavTwo/>
   <div class='anima'>
-  <Sobre/>
+    <Sobre/>
   </div>
   <NavBottomTree/>
 </div>

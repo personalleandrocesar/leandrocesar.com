@@ -31,66 +31,6 @@ const router = createRouter({
       path: '/projetos/em-desenvolvimento',
       name: 'projetos/em-desenvolvimento',
       component: () => import('../views/projetos/em-desenvolvimento.vue')
-    },
-    {
-      path: '/professor',
-      name: 'professor',
-      component: () => import('../views/professor.vue')
-    },
-    {
-      path: '/personal',
-      name: 'personal',
-      component: () => import('../views/personal.vue')
-    },
-    {
-      path: '/consultoria',
-      name: 'consultoria',
-      component: () => import('../views/consultoria.vue')
-    },
-    {
-      path: '/avaliacao',
-      name: 'avaliacao',
-      component: () => import('../views/avaliacao.vue')
-    },
-    {
-      path: '/kravmaga',
-      name: 'kravmaga',
-      component: () => import('../views/kravmaga.vue')
-    },
-    {
-      path: '/acupuntura',
-      name: 'acupuntura',
-      component: () => import('../views/acupuntura.vue')
-    },
-    {
-      path: '/programacao',
-      name: 'programacao',
-      component: () => import('../views/programacao.vue')
-    },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('../views/blog.vue')
-    },
-    {
-      path: '/blog/index',
-      name: 'blog/index',
-      component: () => import('../views/blog/index.vue')
-    },
-    {
-      path: '/blog/acupuntura',
-      name: 'blog/acupuntura',
-      component: () => import('../views/blog/acupuntura/index.vue')
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/login.vue')
-    },
-    {
-      path: '/recuperar',
-      name: 'recuperar',
-      component: () => import('../views/recuperar.vue')
     }
   ]
 })

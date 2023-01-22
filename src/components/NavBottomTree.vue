@@ -18,7 +18,7 @@ methods: {
       <h5>INÍCIO</h5>
     </RouterLink>
      <RouterLink to='/projetos/ativos' @click.native="scrollToTop()">
-      <i class="fa-solid fa-diagram-project"></i>
+      <i class="fa-solid fa-bars-progress"></i>
       <h5>PROJETOS</h5>
     </RouterLink>
      <RouterLink to='/sobre' @click.native="scrollToTop()">
@@ -80,8 +80,7 @@ i {
   text-shadow: 0px 0px .5px black;
 }
 
-
-.nav-bottom a.RouterLink-exact-active {
+.nav-bottom a.router-link-exact-active {
   color: #000;
 }
 </style>

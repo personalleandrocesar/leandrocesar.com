@@ -66,7 +66,7 @@
     </div>
 <div class="main-two">
   <div>
-
+    
     <a href="https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20na%20sua%20Consultoria%20e%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20">
       <i class="fa-brands fa-square-whatsapp"></i> WhatsApp
     </a>
@@ -86,13 +86,13 @@
   </div>
 </div>
 
-    <div class='main-tree'>
-      <div>
+<div class='main-tree'>
+  <div>
         
         <h5><i class="fa-solid fa-timeline"></i> Linha do tempo</h5>
       </div>
     </div>
-
+    
     <div class='main-five'>
       <div class='main-five-card'>
         <h4 class='dateYear'>|</h4>
@@ -113,65 +113,67 @@
         <h4 @click='oitoSeis' class='dateYear' :class='{ dateYearHover: aplicarSeven }'> 1986</h4>
         <h4 class='dateYear'>|</h4>
         <br>
-
+        
       </div>
     </div>
-
+    
     <div class='main-six'>
       <div class='main-six-card'>
         <div v-html='acontecimentos'></div>
-
+        
       </div>
     </div>
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
     <br>
     <br>
     <br>
-
+    
   </div>
 </template>
 <script>
+import Footer from './Footer.vue'
+
 export default {
-  head: {
-    title: 'Sobre | Leandro Cesar',
-    htmlAttrs: {
-      lang: 'pt-br'
+    head: {
+        title: "Sobre | Leandro Cesar",
+        htmlAttrs: {
+            lang: "pt-br"
+        },
+        meta: [
+            { charset: "utf-8" },
+            { name: "viewport", content: "width=device-width, initial-scale=1" },
+            { hid: "description", name: "description", content: "Professor Leandro Cesar Ramos da Costa | Site para Conteúdos e Serviços => Personal Trainer | Consultoria Online e Presencial | Acupuntura | Atendimentos em Niterói e São Gonçalo - RJ" },
+            { hid: "keywords", name: "description", content: "Personal trainer, Acupuntura, Consultoria" },
+            { name: "format-detection", content: "telephone=no" }
+        ],
+        link: [
+            { rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" },
+            { rel: "shortcut icon", type: "image/x-icon", href: "/img/favicon.svg" },
+            { rel: "apple-touch-icon", size: "180x180", href: "/img/apple-touch-icon.png" },
+            { rel: "icon", type: "image/png", size: "32x32", href: "/img/favicon-32x32.png" },
+            { rel: "icon", type: "image/png", size: "16x16", href: "/img/favicon-16x16.png" },
+            { rel: "apple-touch-icon", size: "180x180", href: "/img/apple-touch-icon.png" },
+            { rel: "mask-icon", href: "/img/safari-pinned-tab.svg", color: "#002937" }
+        ],
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Professor Leandro Cesar Ramos da Costa | Site para Conteúdos e Serviços => Personal Trainer | Consultoria Online e Presencial | Acupuntura | Atendimentos em Niterói e São Gonçalo - RJ' },
-      { hid: 'keywords', name: 'description', content: 'Personal trainer, Acupuntura, Consultoria' },
-      { name: 'format-detection', content: 'telephone=no' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
-      { rel: 'shortcut icon', type: 'image/x-icon', href: '/img/favicon.svg' },
-      { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-      { rel: 'icon', type: 'image/png', size: '32x32', href: '/img/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', size: '16x16', href: '/img/favicon-16x16.png' },
-      { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-      { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: '#002937' }
-    ],
-  },
-  data() {
-    return {
-      aplicar: '',
-      aplicarTwo: '',
-      aplicarTree: '',
-      aplicarFour: '',
-      aplicarFive: '',
-      aplicarSix: '',
-      aplicarSeven: '',
-      aplicarEight: true,
-      aplicarEduca: true,
-      aplicarAcupu: '',
-      acontecimentos: `
+    data() {
+        return {
+            aplicar: "",
+            aplicarTwo: "",
+            aplicarTree: "",
+            aplicarFour: "",
+            aplicarFive: "",
+            aplicarSix: "",
+            aplicarSeven: "",
+            aplicarEight: true,
+            aplicarEduca: true,
+            aplicarAcupu: "",
+            acontecimentos: `
         <h4 style="margin-left: 10px;">Fevereiro</h4>
           <ul class="com-bullet com-indent">
             <li>
@@ -195,19 +197,19 @@ export default {
           </ul>
           
           `,
-    }
-  },
-  methods: {
-    doisUm() {
-      this.aplicar = true,
-        this.aplicarTwo = false,
-        this.aplicarTree = false,
-        this.aplicarFour = false,
-        this.aplicarFive = false,
-        this.aplicarSix = false,
-        this.aplicarSeven = false,
-        this.aplicarEight = false,
-        this.acontecimentos = `
+        };
+    },
+    methods: {
+        doisUm() {
+            this.aplicar = true,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.acontecimentos = `
         <h4 style="margin-left: 10px;"> Novembro</h4>
           <ul class="com-bullet com-indent">
             <li>
@@ -228,56 +230,56 @@ export default {
               Reinício do estágio em Acupuntura - Pós Pandemia (COVID-19);
             </li>
           </ul>
-          `
-    },
-    umOito() {
-      this.aplicar = false,
-        this.aplicarTwo = true,
-        this.aplicarTree = false,
-        this.aplicarFour = false,
-        this.aplicarFive = false,
-        this.aplicarSix = false,
-        this.aplicarSeven = false,
-        this.aplicarEight = false,
-        this.acontecimentos = `
+          `;
+        },
+        umOito() {
+            this.aplicar = false,
+                this.aplicarTwo = true,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.acontecimentos = `
         <h4 style="margin-left: 10px;">Novembro</h4>
           <ul class="com-bullet com-indent">
             <li>
               Início do curso de Pós-Graduação em Acupuntura - Universidade Celso Lisboa - UCB;
             </li>
           </ul>
-          `
-    },
-    umSete() {
-      this.aplicar = false,
-        this.aplicarTwo = false,
-        this.aplicarTree = true,
-        this.aplicarFour = false,
-        this.aplicarFive = false,
-        this.aplicarSix = false,
-        this.aplicarSeven = false,
-        this.aplicarEight = false,
-        this.acontecimentos =
-        `
+          `;
+        },
+        umSete() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = true,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.acontecimentos =
+                    `
           <h4 style="margin-left: 10px;">Março</h4>
         <ul class="com-bullet com-indent">
           <li>
             Início do curso de Formação de Professor de Yoga - Shiva Studio - Rio de Janeiro - RJ;
           </li>
           </ul>
-          `
-    },
-    umUm() {
-      this.aplicar = false,
-        this.aplicarTwo = false,
-        this.aplicarTree = false,
-        this.aplicarFour = true,
-        this.aplicarFive = false,
-        this.aplicarSix = false,
-        this.aplicarSeven = false,
-        this.aplicarEight = false,
-        this.acontecimentos =
-        `
+          `;
+        },
+        umUm() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = true,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.acontecimentos =
+                    `
         <h4 style="margin-left: 10px;">Novembro</h4>
           <ul class="com-bullet com-indent">
             <li>
@@ -290,76 +292,76 @@ export default {
               Início do curso de Formação de Instrutor de Krav-Maga - Bukan School of Krav-maga - Rio de Janeiro - RJ;
             </li>
           </ul>
-          `
-    },
-    zeroOito() {
-      this.aplicar = false,
-        this.aplicarTwo = false,
-        this.aplicarTree = false,
-        this.aplicarFour = false,
-        this.aplicarFive = true,
-        this.aplicarSix = false,
-        this.aplicarSeven = false,
-        this.aplicarEight = false,
-        this.acontecimentos =
-        `
+          `;
+        },
+        zeroOito() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = true,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.acontecimentos =
+                    `
         <h4 style="margin-left: 10px;">Fevereiro</h4>
           <ul class="com-bullet com-indent">
             <li>
               Término do curso de Graduação em Educação Física - Universidade Salgado de Oliveita - UNIVERSO;
             </li>
           </ul>
-          `
-    },
-    zeroCinco() {
-      this.aplicar = false,
-        this.aplicarTwo = false,
-        this.aplicarTree = false,
-        this.aplicarFour = false,
-        this.aplicarFive = false,
-        this.aplicarSix = true,
-        this.aplicarSeven = false,
-        this.aplicarEight = false,
-        this.acontecimentos =
-        `
+          `;
+        },
+        zeroCinco() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = true,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.acontecimentos =
+                    `
         <h4 style="margin-left: 10px;">Fevereiro</h4>
           <ul class="com-bullet com-indent">
             <li>
               Início do curso de Graduação em Educação Física - Universidade Salgado de Oliveita - UNIVERSO;
             </li>
           </ul>
-          `
-    },
-    oitoSeis() {
-      this.aplicar = false,
-        this.aplicarTwo = false,
-        this.aplicarTree = false,
-        this.aplicarFour = false,
-        this.aplicarFive = false,
-        this.aplicarSix = false,
-        this.aplicarSeven = true,
-        this.aplicarEight = false,
-        this.acontecimentos =
-        `
+          `;
+        },
+        oitoSeis() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = true,
+                this.aplicarEight = false,
+                this.acontecimentos =
+                    `
         <h4 style="margin-left: 10px;">Outubro</h4>
           <ul class="com-bullet com-indent">
             <li>
               Nascimento no dia 08 - Neves - São Gonçalo - RJ;
             </li>
           </ul>
-          `
-    },
-    doisDois() {
-      this.aplicar = false,
-        this.aplicarTwo = false,
-        this.aplicarTree = false,
-        this.aplicarFour = false,
-        this.aplicarFive = false,
-        this.aplicarSix = false,
-        this.aplicarSeven = false,
-        this.aplicarEight = true,
-        this.acontecimentos =
-        `
+          `;
+        },
+        doisDois() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = true,
+                this.acontecimentos =
+                    `
           <h4 style="margin-left: 10px;">Fevereiro</h4>
           <ul class="com-bullet com-indent">
             <li>
@@ -381,13 +383,13 @@ export default {
               Início dos trabalhos da Deep Acupuntura na academia BodyClass;
             </li>
           </ul>
-          `
-    },
-    educa() {
-      this.aplicarEduca = true,
-        this.aplicarAcupu = false,
-        this.projetos =
-        `
+          `;
+        },
+        educa() {
+            this.aplicarEduca = true,
+                this.aplicarAcupu = false,
+                this.projetos =
+                    `
           <h4 style="margin-left: 10px;">Personal | Consultoria</h4>
         <h5 style="text-align: left; margin:0; color: #ffffff90">Ativo</h5>
           <ul class="com-bullet com-indent">
@@ -404,13 +406,13 @@ export default {
             </li>
           </ul>
           <br>
-          `
-    },
-    acupu() {
-      this.aplicarAcupu = true,
-        this.aplicarEduca = false,
-        this.projetos =
-        `
+          `;
+        },
+        acupu() {
+            this.aplicarAcupu = true,
+                this.aplicarEduca = false,
+                this.projetos =
+                    `
           <h4 style="margin-left: 10px;">Deep Acupuntura</h4>
         <h5 style="text-align: left; margin:0; color: #ffffff90">Em Desenvolvimento</h5>
           <ul class="com-bullet com-indent">
@@ -419,9 +421,10 @@ export default {
             </li>
           </ul>
           <br>
-          `
-    }
-  }
+          `;
+        }
+    },
+    components: { Footer }
 } 
 </script>
 <style scoped>
@@ -560,7 +563,7 @@ code {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0px 0 55px 0px;
+  padding: 0px 0 45px 0px;
   color: black;
 }
 
@@ -573,7 +576,7 @@ code {
   }
   
 .main-two i {
-  font-size: 30px;
+  font-size: 20px;
   margin: 2px 0;
   transition: all .4s linear;
 }
@@ -597,18 +600,17 @@ code {
 
 .main-two a {
   border: solid .1px #aaa;
-  margin: 3px 0 0 3px;
-  height: 85px;
-  width: 85px;
+  height: 55px;
+  width: 55px;
   color: #555;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size:1em;
+  font-size:.7em;
   transition: all .4s linear;
-  margin: 0px 10px 20px 10px;
+  margin: 0px 4px 20px 4px;
   border-radius: 15% 15% 15% 15%;
 }
 .main-two a:hover {
