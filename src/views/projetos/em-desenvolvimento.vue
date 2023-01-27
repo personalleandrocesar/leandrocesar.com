@@ -40,7 +40,7 @@ import Projetos from '../../components/Projetos.vue'
                     <div>
                       <h4>Tribo Alma forte</h4>
                       <h5>@triboalmaforte</h5>
-                      <p>A carne só é forte porque a alma é forte!</p>
+                      <p>O corpo só é forte porque a alma é forte!</p>
                     </div>
                   </a>
                   <!--
