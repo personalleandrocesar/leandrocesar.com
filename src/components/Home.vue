@@ -50,7 +50,7 @@ h1{
 }
 
 h1:hover{
-  color:#fadb41;
+  color:#545454;
   
 }
 

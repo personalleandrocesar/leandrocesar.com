@@ -27,7 +27,7 @@ body {
   }
 
   50% {
-    color: #fadb41;
+    color: #545454;
   }
 
   100% {
@@ -43,36 +43,36 @@ body {
 
 .logoAnimationOne {
   animation-direction: top;
-  animation: opacityAnimation 2s;
+  animation:  opacityAnimation 2s;
 }
 
 .logoAnimationTwo {
   animation-direction: top;
-  animation: opacityAnimation 4s;
+  animation:  opacityAnimation 4s;
 }
 
 .logoAnimationTree {
   animation-direction: top;
-  animation: opacityAnimation 6s;
+  animation:  opacityAnimation 6s;
 }
 
 .logoAnimationFour {
   animation-direction: top;
-  animation: opacityAnimation 8s;
+  animation:  opacityAnimation 8s;
 }
 
 .logoAnimationFive {
-  animation: opacityAnimation 10s;
+  animation:  opacityAnimation 10s;
 }
 
 .logoAnimationSix {
   animation-direction: top;
-  animation: opacityAnimation 12s;
+  animation:  opacityAnimation 12s;
 }
 
 .logoAnimationSeven {
   animation-direction: top;
-  animation: opacityAnimation 12s;
+  animation:  opacityAnimation 12s;
 }
 
 .logoAnimationSevenTwo {

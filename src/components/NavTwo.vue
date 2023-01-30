@@ -40,7 +40,7 @@
 }
 
 .nav-two i:hover {
-  color: #fadb41;
+  color: #545454;
   margin-top: 8px;
   display: flex;
   justify-content: flex-end;
