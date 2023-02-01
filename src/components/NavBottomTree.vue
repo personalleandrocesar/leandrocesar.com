@@ -21,6 +21,10 @@ methods: {
       <i class="fa-solid fa-bars-progress"></i>
       <h5>PROJETOS</h5>
     </RouterLink>
+     <!-- <RouterLink to='/' @click.native="scrollToTop()">
+     <i class="fa-solid fa-folder-plus"></i>
+    <h5>PORTIFÓLIO</h5>
+    </RouterLink> -->
      <RouterLink to='/sobre' @click.native="scrollToTop()">
     <i class="fa-solid fa-user"></i>
       <h5>SOBRE</h5>
