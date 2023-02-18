@@ -29,7 +29,7 @@ import Projetos from '../../components/Projetos.vue'
                     <div>
                       <h4>Espirita.xyz</h4>
                       <h5>@espirita.xyz</h5>
-                      <p>Espiritismo para todos</p>
+                      <p>Espiritismo para todos!</p>
                     </div>
                   </a>
                   <a href="https://triboalmaforte.com" class='main-five-card'>
