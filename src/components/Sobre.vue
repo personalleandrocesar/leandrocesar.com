@@ -11,7 +11,7 @@
     <div class='profile'>
       <img src='/img/perfilRed.jpeg' alt='' name="Image">
       <div>
-        <h1>Leandro Cesar</h1>
+        <h1>Leandro Cesar Ramos da Costa</h1>
         <RouterLink to="/projetos/ativos">
           <i class="fa-solid fa-person-rays"></i> Empreendedor
         </RouterLink>
@@ -25,20 +25,23 @@
       <a href="https://deepacupuntura.com">
         <i class="fa-solid fa-building"></i> Dono do Deep Acupuntura
       </a>
-      <RouterLink to="/professor">
+      <a>
         <i class="fa-solid fa-dumbbell"></i> Profissional de Educação Física
-      </RouterLink>
-      <RouterLink to="/acupuntura">
+      </a>
+      <a>
         <i class="fa-solid fa-yin-yang"></i> Acupunturista
-      </RouterLink>
-      <RouterLink to="/kravmaga">
-        <i class="fa-solid fa-hand-back-fist"></i> Instrutor de Krav-maga
-      </RouterLink>
-      <RouterLink to="/programacao">
+      </a>
+      <a>
         <i class="fa-sharp fa-solid fa-laptop"></i> Programador
-      </RouterLink>
+      </a>
+      <a>
+        <i class="fa-solid fa-hand-back-fist"></i> Instrutor de Krav-maga
+      </a>
       <a href="https://github.com/professorleandrocesar">
         <i class="fa-brands fa-github"></i> @professorleandrocesar
+      </a>
+      <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4268569U7">
+        <i class="fa-solid fa-link"></i> Currículo Lattes - CNPQ
       </a>
     </div>
 
@@ -50,6 +53,9 @@
           <br>
           <i class="fas fa-certificate"></i> Pós-Graduação Lato-Sensu (especialização) em Acupuntura - UNIVERSIDADE
           CELSO LISBOA - UCL (2018 - 2022);
+          <br>
+          <i class="fas fa-graduation-cap"></i> Graduando em Análise e Desenvolvimento de Sistemas - 
+          UNIVERSIDADE ESTÁCIO - ESTÁCIO (2023 - atual);
           <br>
           <i class="fas fa-certificate graduando"></i> Pós-Graduando em Cinesiologia, Biomecânica e Treinamento Físico -
           UNIVERSIDADE CASTELO BRANCO - UCB (2021 - atual);
@@ -95,6 +101,8 @@
     
     <div class='main-five'>
       <div class='main-five-card'>
+        <h4 class='dateYear'>|</h4>
+        <h4 @click='doisTres' class='dateYear' :class='{ dateYearHover: aplicarNine }'>2023</h4>
         <h4 class='dateYear'>|</h4>
         <h4 @click='doisDois' class='dateYear' :class='{ dateYearHover: aplicarEight }'>2022</h4>
         <h4 class='dateYear'>|</h4>
@@ -170,34 +178,16 @@ export default {
             aplicarFive: "",
             aplicarSix: "",
             aplicarSeven: "",
-            aplicarEight: true,
-            aplicarEduca: true,
-            aplicarAcupu: "",
+            aplicarEight: "",
+            aplicarNine: true,
             acontecimentos: `
         <h4 style="margin-left: 10px;">Fevereiro</h4>
           <ul class="com-bullet com-indent">
             <li>
-              Conclusão do curso de Pós-Graduação Lato-sensu em Acupuntura - Universidade Celso Lisboa - UCL;
-            </li>
-            <li>
-              Finalizando o estágio em Acupuntura na Celso Lisboa - UCL;
+              Início do Curso de graduação em Análise e Desenvolvimento de Sitemas na Universidade Estácio;
             </li>
           </ul>
-        <h4 style="margin-left: 10px;">Janeiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Site deepacupuntura.com no ar;
-            </li>
-            <li>
-              Curso de aprimoramento teórico e prático de Acupuntura Escalpiana de Jiao Shunfa; 
-            </li>
-            <li>
-              Início dos trabalhos da Deep Acupuntura na academia BodyClass;
-            </li>
-          </ul>
-          
-          `,
-        };
+          `}
     },
     methods: {
         doisUm() {
@@ -209,6 +199,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = false,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos = `
         <h4 style="margin-left: 10px;"> Novembro</h4>
           <ul class="com-bullet com-indent">
@@ -241,6 +232,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = false,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos = `
         <h4 style="margin-left: 10px;">Novembro</h4>
           <ul class="com-bullet com-indent">
@@ -259,6 +251,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = false,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos =
                     `
           <h4 style="margin-left: 10px;">Março</h4>
@@ -278,6 +271,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = false,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos =
                     `
         <h4 style="margin-left: 10px;">Novembro</h4>
@@ -303,6 +297,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = false,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos =
                     `
         <h4 style="margin-left: 10px;">Fevereiro</h4>
@@ -322,6 +317,7 @@ export default {
                 this.aplicarSix = true,
                 this.aplicarSeven = false,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos =
                     `
         <h4 style="margin-left: 10px;">Fevereiro</h4>
@@ -341,6 +337,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = true,
                 this.aplicarEight = false,
+                this.aplicarNine = false,
                 this.acontecimentos =
                     `
         <h4 style="margin-left: 10px;">Outubro</h4>
@@ -360,6 +357,7 @@ export default {
                 this.aplicarSix = false,
                 this.aplicarSeven = false,
                 this.aplicarEight = true,
+                this.aplicarNine = false,
                 this.acontecimentos =
                     `
           <h4 style="margin-left: 10px;">Fevereiro</h4>
@@ -385,45 +383,27 @@ export default {
           </ul>
           `;
         },
-        educa() {
-            this.aplicarEduca = true,
-                this.aplicarAcupu = false,
-                this.projetos =
+        doisTres() {
+            this.aplicar = false,
+                this.aplicarTwo = false,
+                this.aplicarTree = false,
+                this.aplicarFour = false,
+                this.aplicarFive = false,
+                this.aplicarSix = false,
+                this.aplicarSeven = false,
+                this.aplicarEight = false,
+                this.aplicarNine = true,
+                this.acontecimentos =
                     `
-          <h4 style="margin-left: 10px;">Personal | Consultoria</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Ativo</h5>
+        <h4 style="margin-left: 10px;">Fevereiro</h4>
           <ul class="com-bullet com-indent">
             <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
+              Início do Curso de graduação em Análise e Desenvolvimento de Sitemas na Universidade Estácio;
             </li>
           </ul>
-          <br>
-          <h4 style="margin-left: 10px;">EternFlow.com</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Em desenvolvimento</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          `;
+          `;},
+
         },
-        acupu() {
-            this.aplicarAcupu = true,
-                this.aplicarEduca = false,
-                this.projetos =
-                    `
-          <h4 style="margin-left: 10px;">Deep Acupuntura</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Em Desenvolvimento</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          `;
-        }
-    },
     components: { Footer }
 } 
 </script>
@@ -496,7 +476,9 @@ code {
 
 .profile {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 10px 0 5px 0;
   color: black;
@@ -506,19 +488,21 @@ code {
   text-decoration: none;
   color: #aaa;
   font-size: .9em;
+  margin-left: 20px;
 }
 
 .profile img {
-  height: 70px;
+  height: 90px;
   border-radius: 50%;
   margin-left: 10px;
   padding: 0 25px 0 0;
 }
 
 .profile h1 {
-  margin: 5px 0 0 -10px;
-  font-size: 1.5em;
+  margin: 5px 10px 0 10px;
+  font-size: 1.3em;
 }
+
 
 .profile h4 {
   margin: 0 0 0 -10px;
@@ -541,6 +525,7 @@ code {
 
 .main-one a:nth-child(1) i {
   padding-right: 2px;
+  text-decoration: underline;
   margin: 0 0 0 2px;
 }
 
@@ -682,7 +667,7 @@ code {
 }
 
 .main-four-card {
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;

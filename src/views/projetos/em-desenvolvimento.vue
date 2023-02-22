@@ -651,6 +651,16 @@ code {
   width: 44%;
 }
 
+.main-five-card-two{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: solid 1px #dddddd;
+  border-radius: 3% 3% 3% 3%;
+  align-items: center;
+  width: 44%;
+}
+
 @media only screen and (max-width: 382px) {
   .main-five-card {
     width: 100%;
