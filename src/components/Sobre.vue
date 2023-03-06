@@ -37,8 +37,8 @@
       <a>
         <i class="fa-solid fa-hand-back-fist"></i> Instrutor de Krav-maga
       </a>
-      <a href="https://github.com/professorleandrocesar">
-        <i class="fa-brands fa-github"></i> @professorleandrocesar
+      <a href="https://github.com/personalleandrocesar">
+        <i class="fa-brands fa-github"></i> @personalleandrocesar
       </a>
       <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4268569U7">
         <i class="fa-solid fa-link"></i> Currículo Lattes - CNPQ
@@ -76,17 +76,17 @@
     <a href="https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20na%20sua%20Consultoria%20e%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20">
       <i class="fa-brands fa-square-whatsapp"></i> WhatsApp
     </a>
-    <a href="mailto:professor@leandrocesar.com">
+    <a href="mailto:personal@leandrocesar.com">
       <i class="fa-solid fa-envelope"></i> E-mail
     </a>
-    <a href="https://github.com/professorleandrocesar">
+    <a href="https://github.com/personalleandrocesar">
       <i class="fa-brands fa-github"></i> GitHub
     </a>
     
-    <a href="https://instagram.com/professorleandrocesar">
+    <a href="https://instagram.com/personalleandrocesar">
       <i class="fa-brands fa-square-instagram"></i> instagram
     </a>
-    <a href="https://www.youtube.com/@LeandroCesarCosta">
+    <a href="https://www.youtube.com/@personalleandrocesar">
       <i class="fa-brands fa-youtube"></i> Youtube
     </a>
   </div>

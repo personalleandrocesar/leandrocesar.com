@@ -34,14 +34,14 @@
     
     
     
-      <a href="https://professorleandrocesar.com" class='main-five-card'>
+      <a href="https://personal.leandrocesar.com" class='main-five-card'>
     
         <div>
           <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'>
         </div>
         <div>
-          <h4>Professor<br>Leandro Cesar</h4>
-          <h5>@professorleandrocesar</h5>
+          <h4>Personal<br>Leandro Cesar</h4>
+          <h5>@personalleandrocesar</h5>
           <p>Personal trainer - Consultoria - Avaliação Física - Krav-maga</p>
         </div>
       </a>
